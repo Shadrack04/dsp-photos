@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto consensed', sans-serif;
+    background: #eee;
+    height: auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+main{
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0,0,0,0.1), -30px 0 40px (0,0,0,0.1);
+    
+}
+.landing {
+    background: #fff;
+}
+
+.landing-text {
+    display: flex;
+    height: 50vh;
+    flex: 0 1 40vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.landing-text p {
+    width: 50%;
+    margin: auto;
+    color: #888;
+}
+
+.btn {
+    padding: 0.4rem 1.2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 2rem 0 0;
+    color: #333;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    background: #f4f4f4;
+}
+
+.landing-image {
+    background: url(images/william-thomas-ny6tO4ItOEY-unsplash.jpg);
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0.7rem;
+}
+
+.title h2 {
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+}
+.caption {
+    padding: 0.5rem;
+    text-align: center;
+}
+footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #333;
+    line-height: 1.4;
+}
+
+footer h3 {
+    font-size: 3rem;
+}
+
+/* for screen of 500px and up */
+@media (min-width:500px) {
+    .landing {
+        display: flex;
+    }
+
+    .landing-text {
+        height: 100vh;
+    }
+    .landing-image {
+        height: 100vh;
+    }
+}
+
+/* screen of 700px and up */
+@media (min-width:700px) {
+    .btn {
+        padding: 1rem 3rem;
+    }
+}
